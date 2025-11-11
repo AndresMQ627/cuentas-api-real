@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/bufaloboards-api"
+		},
+		{
+			"path": "D:/bufaloboards-frontend"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bufaloboards-frontend"
+	}
+}
