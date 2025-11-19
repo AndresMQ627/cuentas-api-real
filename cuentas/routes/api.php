@@ -9,14 +9,12 @@ use App\Http\Controllers\TransactionsController;
 //EHDPOINT
 
 Route::post('/login',[AuthController::class, 'login']);
+
 Route::middleware("jwt")->group(function(){
-    Route::resource('accounts', AccountsController::class);
-    Route::resource('categories', CategoriesController::class);
-    Route::resource('transactions', TransactionsController::class);
-    Route::post('changestatus', [AccountsController::class, 'changeStatus']);
-    
+Route::resource('accounts', AccountsController::class);
+Route::resource('categories', CategoriesController::class);
+Route::resource('transactions', TransactionsController::class);
+Route::post('changestatus', [AccountsController::class, 'changeStatus']);
 });
-
-
 
 
